@@ -1,5 +1,10 @@
 
-
+body {
+    background: rgb(30, 30, 30);
+    color: rgb(198, 198, 198);
+    font-family: monospace;
+    font-size: 16px;
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -18,15 +23,29 @@
 }
 
 .box {
-    border: 1px solid rgb(201, 201, 201);
+    border: 1px solid rgba(201, 201, 201, 0.526);
 }
 
 .infoContainer {
     display: flex;
     gap: 10px;
     margin: 2rem;
+    align-items: center;
 }
 
 .boxOn {
     background: yellow;
+}
+
+button {
+    background:transparent;
+    border: 1.5px solid rgb(103, 153, 219);
+    padding: 5px 25px;
+    width: 200px;
+    height: 40px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(48, 53, 57, 0.449);
+    color: white;
+    font-family: monospace;
+    font-size: 14px;
 }

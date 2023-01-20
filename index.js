@@ -4,6 +4,8 @@ const gridContainer = document.querySelector('.gridContainer');
 const chooseGridSize = document.querySelector('.gridSizeButton')
 const clear = document.querySelector('.clearButton');
 const radioButtons = document.querySelectorAll('input');
+const yellow = document.querySelector('#yellow');
+yellow.checked = true;
 
 const createBoxDiv = () => {
     const box = document.createElement('div');
