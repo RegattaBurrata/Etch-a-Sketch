@@ -3,6 +3,7 @@ let boxSize = '16'
 const gridContainer = document.querySelector('.gridContainer');
 const chooseGridSize = document.querySelector('.gridSizeButton')
 const clear = document.querySelector('.clearButton');
+const radioButtons = document.querySelectorAll('input');
 
 const createBoxDiv = () => {
     const box = document.createElement('div');
@@ -20,9 +21,11 @@ const createGrid = (size) => {
 
 createGrid(boxSize);
 
+let color = 'yellow'
+
 const boxOn = (e) => {
     console.log(e);
-    e.srcElement.classList.add('boxOn');
+    e.srcElement.style.background = color;
 }
 
 const mouseOver = () => {
@@ -50,5 +53,11 @@ chooseGridSize.addEventListener('click', function () {
 
 clear.addEventListener('click', function () {
     const allBoxes = document.querySelectorAll('.box');
-    allBoxes.forEach((box) => { box.classList.remove('boxOn') })
+    allBoxes.forEach((box) => { box.style.background = 'white' })
 })
+
+const colorSelect = (e) => {
+    color = e.target.value;
+}
+
+radioButtons.forEach((radioButton) => {radioButton.addEventListener('change', colorSelect)})
