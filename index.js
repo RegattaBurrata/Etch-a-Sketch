@@ -55,7 +55,7 @@ chooseGridSize.addEventListener('click', function () {
 
 clear.addEventListener('click', function () {
     const allBoxes = document.querySelectorAll('.box');
-    allBoxes.forEach((box) => { box.style.background = 'white' })
+    allBoxes.forEach((box) => { box.style.background = 'transparent' })
 })
 
 const colorSelect = (e) => {
