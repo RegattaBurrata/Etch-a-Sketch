@@ -21,9 +21,12 @@
     border: 1px solid rgb(201, 201, 201);
 }
 
-/* .box:nth-child(16n +1) {
-    width: 100%;
-    border: 0;
-    height: 0;
-    
-} */
+.infoContainer {
+    display: flex;
+    gap: 10px;
+    margin: 2rem;
+}
+
+.boxOn {
+    background: yellow;
+}
